@@ -73,8 +73,8 @@ brew install openssl
 
 ### Method 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/http-flooder-cpp.git
-cd http-flooder-cpp
+git clone https://github.com/SaifFakhar39/TatanoVex.git
+cd TatanoVex
 ```
 
 ### Method 2: Manual Compilation
@@ -82,20 +82,20 @@ cd http-flooder-cpp
 #### Linux/macOS
 ```bash
 # Standard compilation
-g++ -o http_flooder http_flooder.cpp -std=c++11 -pthread -lssl -lcrypto -O3
+g++ -o http_flooder main.cpp -std=c++11 -pthread -lssl -lcrypto -O3
 
 # With additional optimizations
-g++ -o http_flooder http_flooder.cpp -std=c++11 -pthread -lssl -lcrypto -O3 -march=native -mtune=native
+g++ -o http_flooder main.cpp -std=c++11 -pthread -lssl -lcrypto -O3 -march=native -mtune=native
 ```
 
 #### Windows (MinGW)
 ```bash
-g++ -o http_flooder.exe http_flooder.cpp -std=c++11 -lws2_32 -lssl -lcrypto -O3
+g++ -o http_flooder.exe main.cpp -std=c++11 -lws2_32 -lssl -lcrypto -O3
 ```
 
 #### Windows (Visual Studio)
 ```bash
-cl /EHsc /std:c++11 http_flooder.cpp /link ws2_32.lib ssleay32.lib libeay32.lib
+cl /EHsc /std:c++11 main.cpp /link ws2_32.lib ssleay32.lib libeay32.lib
 ```
 
 ## 🎯 Usage
